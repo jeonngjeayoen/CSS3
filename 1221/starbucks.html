@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타벅스 모바일 웹내비게이션</title>
+  <!-- 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  
+  <!-- 아이콘 폰트 CDN 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./images/logo.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <a href="#" title="로그인" class="login_icon">
+      <img src="./images/user.svg" alt="로그인" >
+    </a>
+
+    <a href="#" title="지점찾기" class="location_icon">
+      <img src="./images/maps-and-flags.svg" alt="지점찾기">
+    </a>
+
+    <label for="toggle" class="total_mnu">
+      <img src="./images/menu.svg" alt="전체메뉴">
+    </label>
+
+    <!-- 내비게이션 박스 -->
+    <nav class="gnb">
+      <label for="toggle" class="c_btn">
+        <img src="./images/close.png" alt="">
+      </label>
+
+      <ul>
+        <li><input type="search"><input type="button" value="search"></li>
+        <li><a href="#" title="">my starbucks <i class="fas fa-angle-down"></i></a></li>
+        <li><a href="#" title="">coffee<i class="fas fa-angle-down"></i></a></li>
+        <li><a href="#" title="">menu<i class="fas fa-angle-down"></i></a></li>
+        <li><a href="#" title="">store<i class="fas fa-angle-down"></i></a></li>
+          <li><a href="#" title="">responsibility<i class="fas fa-angle-down"></i></a></li>
+        <li><a href="#" title="">store<i class="fas fa-angle-down"></i></a></li>
+          <li><a href="#" title="">my starbucks rewards<i class="fas fa-angle-down"></i></a></li>
+          <li><a href="#" title="">what's new<i class="fas fa-angle-down"></i></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <article class="slide">
+      <h2>메인 슬라이드</h2>
+    </article>
+
+    <section>
+      <h2>콜드브루 커피<img src="./images/logo_decaf.png" alt=""></h2>
+      <p>디카페인 에스프레소 샷 추가 가능(일부음료 제외)</p>
+      
+      <ul class="cold_coffee">
+        <li><a href="#" title=""><img src="./images/01.jpg" alt=""></a>
+          <span class="new_icon">new</span>
+            <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/02.jpg" alt=""></a>
+            <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/03.jpg" alt=""></a>
+            <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/04.jpg" alt=""></a>
+            <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/05.jpg" alt=""></a>
+            <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/06.jpg" alt=""></a>
+            <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/07.jpg" alt=""></a>
+          <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/08.jpg" alt=""></a>
+          <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/09.jpg" alt=""></a>
+          <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/10.jpg" alt=""></a>
+          <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/11.jpg" alt=""></a>
+          <p>제품명</p>
+        </li>
+        <li><a href="#" title=""><img src="./images/12.jpg" alt=""></a>
+          <p>제품명</p>
+        </li>
+      </ul>      
+    </section>
+  </main>
+
+  <footer>
+    <address>Copyright&copy;2022 starbucks allrights reserved.</address>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+웹페이지 레이아웃 방식의 종류
+웹페이지에서 콘텐츠를 배치하기 위한 방법으로는 table, float, position, flex, grid방식의 종류가 있다.
+
+이 중에서 css로 콘텐츠를 가로방향으로 배치하는 방법으로는 요소의 성격인 display:inline, display:inline-block, float:left, display:flex방식을 사용해 본다.
+
+1. display:inline방식으로 블럭요소를 가로배치하기
+- 장점 : 가로방향배치
+- 단점 : 블럭요소가 아니므로 크기값이 사라진다.(패딩값으로 크기 지정가능)
+
+인라인 블록 방식은 크기값을 유지하면서 가로배치가 가능하다 인라인 속성을 가지고 있어서 약간의 틈이 벌어진다
+
+2. display:inline-block방식으로 블럭요소를 가로 배치하기
+- 장점 : 가로방향배치, 크기값 유지
+- 단점 : 인라인 성격도 가지기 때문에 약간의 틈이 생긴다.
+
+3. float:left속성으로 블럭요소를 가로배치하기
+- 장점 : 여백을 주지 않고 옆으로 딱 달라붙게 가로 방향배치
+- 단점 : 부모가 자손의 영역을 인식하지 못함, 아래 다른 요소가 현재 영역을 침범함.
+  
+해결방법 1 : float속성을 적용한 요소의 다음 요소에 clear속성 적용.(다음요소가 제자리를 찾아감)
+
+해결방법 2 : ul::after{
+  		display:block;clear:both;content:"";(빈공간)
+  		} 속성으로 부모높이 해결.
+
+4. display:flex속성으로 블럭요소를 가로배치하기
+- 장점 : 완벽한 수평정렬, 여백이 있어서 레이아웃이 깨지지 않음. 부모높이가 살아있음.
+- 단점 : MS사의 웹브라우저 IE10 이하에서는 인식이 안됨.
+
+공통서식에는 헤더와 푸터 서식을 적용하며 메인에는 콘텐츠 서식을 작성한다
+
+로고배치 할때 부모에게는 position: relative로 기준점을 잡고 자식에게는 position:absolute로 절대배치를 한다
+
+nav 하이트값이 안나올때는 fixed속성으로 고정배치한다
+nav 안에 ul태그에 위치를 설정하기 위해 position:absolute를 준다
+
+회전하는 속성transform: rotate(각도deg)
+
+사용자가 토글버튼을 클릭시 체크박스가 체크되면서 그 아래 .gnb의 위치를 left:0으로 설정하여 나오게 한다
+
+형제서식 작성법: 부모태그 + 체크되는 형재태그 > 자손
+
+
+
+css속성-배경색 p.293
+background속성은 사용자가 선택한 요소에 배경색, 배경이미지를 삽입하기 위한 속성이다.
+
+배경속성의 종류
+background-color:배경색(단일색, 그라디언트)
+background-image:배경이미지
+background-repeat:배경이미지 반복설정하기
+background-size:배경이미지 크기
+background-position:배경이미지 위치 변경
+background-origin:배경이미지 기준위치 지정
+background-attatchment : 배경이미지 고정하기
+멀티백그라운드 : css3에서 추가된 속성으로서 여러 이미지를 한꺼번에 삽입가능.
+1. 배경색(background-color)
+배경색상을 넣기 위한 속성으로서 종류에는 '색상명', 'HEX코드', 'RGB', 'RGBA', 'HSL', 'HSLA'종류가 있다.
+
+a는 alpha(투명도)의 약자로서 %를 소수점으로 환산하여 입력한다.
+
+벤더프리픽스 원래는 서식 앞에 공급 브라우저를 접두사에 붙였다
+
+이미지 스프라이트
+정의 웹페이지를 제작할때 사용하는 아이콘 배너 버튼등을 한개의 그림파일에 넣어놓고 백그라운드 포지션 속성을 사용하여 해당그림을 보여주는 방식
+장점: 이미지의 로딩시간이 지연되지않고 서버의 용량을 줄일 수 있다
+
+445 110
+
+좌표 y310 x0
+
+*flex속성 참고 사이트
+https://studiomeal.com/archives/197
+*css연습 사이트
+https://flukeout.github.io/
+*css그라데이션 사이트
+https://www.colorzilla.com/
+*접두사를 붙여주는 사이트
+https://projects.verou.me/prefixfree/

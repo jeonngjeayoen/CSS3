@@ -1,0 +1,122 @@
+@charset "utf-8";
+h2, h3, p{padding:10px;}
+a{
+  color:#333;
+  text-decoration:none;
+}
+
+/* 세로방향 */
+.gnb{
+  background:#ccc;
+  width:200px;
+}
+.gnb > ul{}
+.gnb > ul > li{text-indent:10px;}
+.gnb > ul > li > a{
+  line-height:40px;
+  display:block;
+  transition:0.3s;
+}
+.gnb > ul > li > a:hover{
+  background-color:#333;
+  color:#fff;
+}
+/* 2. 가로방향 내비게이션 서식 */
+.gnb2{
+  width:1000px;
+  margin:0px auto;
+  height:40px;
+  background:#0d4633;
+}
+.gnb2 > ul{}
+.gnb2 > ul > li{
+  /* width:200px; */
+  float:left;
+  text-align: center;
+}
+.gnb2 > ul > li > a{
+  line-height:40px; /* 메뉴 40높이에서 글자가 중앙정렬 되게 하기 위해 */
+  display:block; /* 마우스 클릭하는 영역을 넓혀주기 위해 */
+  padding:0px 40px;
+  color:#fff;
+}
+
+/* main menu */
+.navi_wrap{
+  width:100%;
+  height:40px;
+  background:hsla(157, 54%, 46%, 0.322);
+  overflow:hidden;
+  position: absolute;
+}
+.navi_wrap:hover{
+  height: 320px;
+  transition: 0.3s;
+}
+.gnb3{
+  width:100%;
+  background:#0d4633;
+}
+.gnb3 > ul{
+  width:1000px;height:40px;
+  margin:0px auto;
+}
+.gnb3 > ul > li{
+  position:relative; /*기준설정*/
+  float:left;
+}
+.gnb3 > ul > li > a{
+  line-height:40px;
+  display:block;
+  text-align:center;
+  color:#fff;
+  padding:0px 40px;
+}
+.gnb3 > ul > li > a:hover{
+  color:orange;
+  text-decoration: underline;
+}
+
+/* submenu */
+.sub{
+  width:100%;
+  position:absolute;
+}
+.sub > li{text-indent:40px;}
+.sub > li > a{
+  line-height:30px;
+  font-size:14px;
+  display:block;
+}
+
+/* 푸터영역 */
+footer{
+  background-color: #555;
+  padding: 15px 0px;
+  height: 300px;
+}
+.f_inner{
+  width: 100%;
+}
+.f_inner>.f_nav{
+  width: 1000px;
+  margin: 0px auto;
+}
+.f_nav>ul{}
+.f_nav>ul>li{
+  float: left;
+  height: 40px;
+}
+.f_nav>ul>li:after{
+  content:"―";
+  color: #fff;
+  padding: 0px 10px;
+}
+.f_nav>ul>li:last-child:after{
+  display: none;
+}
+.f_nav>ul>li>a{
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+}

@@ -1,0 +1,221 @@
+@charset "utf-8";
+body{
+  max-width:375px;
+  margin:0px auto;
+  font-family:"맑은 고딕",arial, sans-serif;
+  font-size:12px;
+  color:#333;
+  overflow-x: hidden;
+}
+a{
+  color:#333;
+  text-decoration:none;
+}
+#toggle{display:none;}
+header{
+  height:50px;
+  padding-top:5px;
+  display:flex;
+  position:relative;
+}
+header > h1{
+  position:absolute;
+  left:60px;
+  width:50px;height:45px;
+  background-image:url('../m_images/sp_header.png');
+  background-position:-143px -44px;
+  background-size:400px;
+  text-indent:-9999px;
+}
+header > h1 > a{
+  display:block;height:45px;
+}
+.total_btn, label[for=search_box], .cart_btn, .my_btn{
+  display:block;
+  text-indent:-9999px;
+  background-image:url('../m_images/sp_header.png');
+  background-size:400px;
+}
+.total_btn{
+  position:absolute;
+  left:10px;
+  width:46px;height:45px;
+  background-position:-0px -102px;
+}
+form{position:relative;}
+fieldset{
+  width:170px;
+  position:absolute;
+  left:112px;top:5px;
+  height:35px;
+  border:1px solid rgb(0, 102, 255);
+  border-radius:3px;
+}
+fieldset > legend{display:none;}
+#search_box{
+  width:150px;
+  border:none;
+  height:35px;
+}
+label[for=search_box]{
+  position:absolute;
+  top:5px;left:140px;
+  width:27px;height:25px;
+  background-position:-41px 0px;
+  z-index:12;
+}
+.cart_btn{
+  position:absolute;
+  right:46px;top:12px;
+  width:36px;height:34px;
+  background-position:-71px 0px;
+}
+.my_btn{
+  position:absolute;right:10px;top:12px;
+  width:32px;height:34px;
+  background-position:-46px -102px;
+}
+
+/* 메인메뉴 서식 */
+.gnb{
+  height:40px;
+  background-color:rgb(45, 110, 230);
+}
+.gnb > ul{
+  display:flex;
+  justify-content: space-around;
+}
+.gnb a{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  line-height:40px;
+  font-size:1rem; /* 1rem = 100% = 16px */
+  font-weight:bold;
+}
+/* 메뉴클릭시 초점이 들어간 요소를 선택하여 서식을 적용*/
+.gnb a:focus::after{
+  content:"";
+  display:block;
+  width:100%;
+  height:3px;
+  background:#fff;
+  position:relative;top:-3px;
+}
+/* 하단 고정 내비게이션 */
+.bottom_nav{
+  position:fixed;
+  bottom:0px;
+}
+.bottom_nav > ul{
+  width:375px;
+  display:flex;
+  margin:0px auto;
+  justify-content:space-around;
+  background:#fff;
+  border-top:1px solid #ccc;
+}
+.bottom_nav > ul > li{
+  text-align:center;
+  height:60px;
+}
+.bottom_nav > ul > li > a{font-size:0.75rem;}
+.icon01, .icon02, .icon03, .icon04, .icon05{
+  display:block;
+  width:50px;height:34px;
+  background:url('../images/sprite__header.png');
+  margin:5px auto;
+  background-size:400px;
+  overflow:hidden;
+}
+.icon01{background-position:-172px 0px;}
+.icon02{background-position:-223px 0px;}
+.icon03{background-position:-272px 0px;width:30px;}
+.icon04{background-position:-302px 0px;width:30px;}
+.icon05{background-position:-331px 0px;width:36px;}
+
+a:focus > .icon01{background-position:-172px -56px;}
+a:focus > .icon02{background-position:-223px -56px;}
+a:focus > .icon03{background-position:-272px -56px;}
+a:focus > .icon04{background-position:-302px -56px;}
+a:focus > .icon05{background-position:-331px -56px;}
+.bottom_nav > ul > li > a:focus{
+  color:#2d6ee6;font-weight:bold;
+}
+
+
+/* 메인서식 */
+main{position: relative;}
+main img{
+  /* width:375px; */
+  width:100%;
+}
+
+/* 푸터서식 */
+footer{
+  background:#333;
+  padding:30px 0px 70px 0px;
+  color:#fff;
+  text-align: center;
+}
+.f_btn{
+  background-color:#777474;
+  padding:4px 10px;
+  color:#fff;
+}
+footer h3{  padding:12px 0px;}
+footer > address{
+  font-style:normal;
+  background-color:#4d4d4d;
+  padding:10px 0px;
+  font-size:11px;
+  display:none;
+}
+footer label[for=f_toggle]{
+  border:1px solid #fff;
+  padding:0px 4px;
+  border-radius:50%;
+}
+footer address dl{
+  width:360px;
+  margin:0 auto;
+  line-height:120%;
+}
+footer address dl::after{
+  clear:both;
+  display:block;
+  content:"";
+}
+footer > address dt{
+  float:left;clear:left;
+  color:#ccc;
+  width:90px;
+  text-align:left;
+}
+footer > address dd{
+  float:left;text-align:left;
+  padding-left:10px;width:260px;
+}
+/* 체크박스 숨기기 */
+#f_toggle{display:none;}
+
+/* 더보기 체크시 회사정보 보이게하기 */
+#f_toggle:checked + address{
+  display:block;
+}
+.f_lnb>a,p{
+  color: #fff;
+  font-size: 11px;
+  padding-top:11px;
+}
+.top{
+  width: 31px;
+  height: 31px;
+  background: #fff;
+  bottom: 8px;
+  right: 8px;
+  position: absolute;
+  background: url(../images/sp_header.png);
+  background-position:-25px -149px;
+  background-size: 205px;
+}

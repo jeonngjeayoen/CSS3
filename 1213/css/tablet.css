@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* tablet서식 
+  767px ~ 1024px
+*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+  /* 상단헤더 */
+  header{}
+  .h_top{
+    height:40px;
+    background-color:#616161;
+  }
+  .h_bottom{
+    height:150px;
+    background-color:aliceblue;
+  }
+
+  /* 메인 */
+  main{}
+  main > .feature{
+    height:300px;
+    background-color:#183240;
+  }
+  .main > .feature > article{
+    width:100%;
+    height:300px;
+    background-color:#ccc;
+    margin:0px auto;
+  }
+  .design_service{
+    width:100%;
+    height:400px;
+    margin:0 auto;
+    background-color:antiquewhite;
+  }
+  .portfolio{
+    width:100%;
+    height:510px;
+    background-color:#d9d9d9;
+  }
+  .portfolio > article{
+    width:100%;
+    height:510px;
+    margin:0px auto;
+    background-color:rgb(196, 185, 171)
+  }
+  /* 푸터서식 */
+  footer{
+    height:308px;
+    background-color:#232b30;
+  }
+  footer > section{
+    width:100%;
+    height:268px;
+    background-color:rgb(214, 241, 232);
+    margin:0px auto;
+  }
+  footer > address{
+    line-height:40px;
+    background-color:#000000;
+    text-align:center;
+    color:#ffffff;
+  }
+}
